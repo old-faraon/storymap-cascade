@@ -11,8 +11,8 @@ import i18n from 'lib-build/i18n!resources/tpl/viewer/nls/app';
 import has from 'dojo/sniff';
 import Deferred from 'dojo/Deferred';
 
-const PREVIEW_THUMB = 'resources/tpl/builder/icons/media-placeholder/video.png';
-const PREVIEW_ICON = 'resources/tpl/builder/icons/immersive-panel/video.png';
+const PREVIEW_THUMB = app.pathCascade + 'resources/tpl/builder/icons/media-placeholder/video.png';
+const PREVIEW_ICON = app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/video.png';
 
 export default class Audio extends Media {
   constructor(audio) {

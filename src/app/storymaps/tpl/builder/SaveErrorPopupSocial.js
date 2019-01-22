@@ -34,7 +34,7 @@ function(
       _resultDeferred = new Deferred();
 
       container.find('.panel1 .help').tooltip({
-        title: i18n.builder.saveErrorSocial.panel1tooltip + '<img src="resources/tpl/builder/icons/share/builder-help-social.png"/>',
+        title: i18n.builder.saveErrorSocial.panel1tooltip + '<img src="' + app.pathCascade + 'resources/tpl/builder/icons/share/builder-help-social.png"/>',
         html: true,
         placement: 'right'
       });

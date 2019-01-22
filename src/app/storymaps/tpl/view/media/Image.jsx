@@ -10,8 +10,8 @@ import i18n from 'lib-build/i18n!resources/tpl/viewer/nls/app';
 import UIUtils from 'storymaps/tpl/utils/UI';
 import Deferred from 'dojo/Deferred';
 
-const PREVIEW_THUMB = 'resources/tpl/builder/icons/media-placeholder/image.jpg';
-const PREVIEW_ICON = 'resources/tpl/builder/icons/immersive-panel/image.png';
+const PREVIEW_THUMB = app.pathCascade + 'resources/tpl/builder/icons/media-placeholder/image.jpg';
+const PREVIEW_ICON = app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/image.png';
 
 export default class Image extends Media {
 

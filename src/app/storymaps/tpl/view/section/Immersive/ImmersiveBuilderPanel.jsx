@@ -8,27 +8,27 @@ const TRANSITIONS = {
   'fade-fast': {
     id: 'fade-fast',
     label: i18n.builder.immersiveViewPanel.fade,
-    icon: 'resources/tpl/builder/icons/immersive-panel/FadeFast.png'
+    icon: app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/FadeFast.png'
   },
   'fade-slow': {
     id: 'fade-slow',
     label: i18n.builder.immersiveViewPanel.fadeSlow,
-    icon: 'resources/tpl/builder/icons/immersive-panel/Fade.png'
+    icon: app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/Fade.png'
   },
   'swipe-vertical': {
     id: 'swipe-vertical',
     label: i18n.builder.immersiveViewPanel.swipeVertical,
-    icon: 'resources/tpl/builder/icons/immersive-panel/SwipeVertical.png'
+    icon: app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/SwipeVertical.png'
   },
   'swipe-horizontal': {
     id: 'swipe-horizontal',
     label: i18n.builder.immersiveViewPanel.swipeHorizontal,
-    icon: 'resources/tpl/builder/icons/immersive-panel/SwipeHorizontal.png'
+    icon: app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/SwipeHorizontal.png'
   },
   none: {
     id: 'none',
     label: i18n.builder.immersiveViewPanel.none,
-    icon: 'resources/tpl/builder/icons/immersive-panel/None.png'
+    icon: app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/None.png'
   }
 };
 

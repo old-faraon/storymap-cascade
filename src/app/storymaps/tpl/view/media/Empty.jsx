@@ -5,8 +5,8 @@ import i18n from 'lib-build/i18n!resources/tpl/builder/nls/app';
 import {} from 'lib-build/less!./Empty';
 import viewTpl from 'lib-build/hbars!./Empty';
 
-const PREVIEW_THUMB = 'resources/tpl/builder/icons/media-placeholder/image.jpg';
-const PREVIEW_ICON = 'resources/tpl/builder/icons/immersive-panel/image.png';
+const PREVIEW_THUMB = app.pathCascade + 'resources/tpl/builder/icons/media-placeholder/image.jpg';
+const PREVIEW_ICON = app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/image.png';
 
 export default class Empty extends Media {
 
@@ -56,7 +56,7 @@ export default class Empty extends Media {
 
     this._node = params.container.find('#' + this._domID).parent();
 
-    this._node.find('.me-placeholder').css('backgroundImage', 'url("resources/tpl/builder/icons/immersive/background-placeholder.jpg")');
+    this._node.find('.me-placeholder').css('backgroundImage', 'url(' + app.pathCascade + '"resources/tpl/builder/icons/immersive/background-placeholder.jpg")');
     this._node.find('.media-empty-add')
       .addClass('authorized-' + (params.mediaIcon || 'all'))
       .click(this.onPickMedia.bind(this));

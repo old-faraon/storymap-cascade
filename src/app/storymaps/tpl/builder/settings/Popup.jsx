@@ -15,7 +15,7 @@ class SettingsPopup {
   constructor(options) {
     this.container = options.container;
     this.data = null;
-    this.esriLogoUrl = 'resources/tpl/viewer/icons/esri-logo.png';
+    this.esriLogoUrl = app.pathCascade + 'resources/tpl/viewer/icons/esri-logo.png';
     this.esriLogoLink = 'https://www.esri.com';
     this.backupLogoUrl = this.esriLogoUrl; // by default the backup can be the default.
     this.backupLogoLink = this.esriLogoLink;

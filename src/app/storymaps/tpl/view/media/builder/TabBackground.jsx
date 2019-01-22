@@ -118,7 +118,7 @@ export default class TabBackground extends Tab {
 
   _loadPreviewFrames() {
     // only apply when we're ready
-    let previewFrameUrlLandscape = 'resources/tpl/builder/icons/media-config/previewLandscape.png';
+    let previewFrameUrlLandscape = app.pathCascade + 'resources/tpl/builder/icons/media-config/previewLandscape.png';
     let imageLandscape = new Image();
     let landscapeLoaded = false;
     let portraitLoaded = false;
@@ -136,7 +136,7 @@ export default class TabBackground extends Tab {
 
     imageLandscape.src = previewFrameUrlLandscape;
 
-    let previewFrameUrlPortrait = 'resources/tpl/builder/icons/media-config/previewPortrait.png';
+    let previewFrameUrlPortrait = app.pathCascade + 'resources/tpl/builder/icons/media-config/previewPortrait.png';
     let imagePortrait = new Image();
 
     imagePortrait.onload = () => {

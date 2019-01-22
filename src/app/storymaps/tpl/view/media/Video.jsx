@@ -19,8 +19,8 @@ var CONFIG = {
   ratio: 16 / 9
 };
 
-const PREVIEW_THUMB = 'resources/tpl/builder/icons/media-placeholder/video.png';
-const PREVIEW_ICON = 'resources/tpl/builder/icons/immersive-panel/video.png';
+const PREVIEW_THUMB = app.pathCascade + 'resources/tpl/builder/icons/media-placeholder/video.png';
+const PREVIEW_ICON = app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/video.png';
 
 export default class Video extends Media {
 

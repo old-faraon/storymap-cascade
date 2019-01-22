@@ -29,7 +29,7 @@ class ImageBackground extends Media {
       <div className="media-background">
         <img
           alt="blank"
-          src="resources/tpl/builder/icons/immersive/background-placeholder.jpg"
+          src={app.pathCascade + 'resources/tpl/builder/icons/immersive/background-placeholder.jpg'}
         />
       </div>
     );

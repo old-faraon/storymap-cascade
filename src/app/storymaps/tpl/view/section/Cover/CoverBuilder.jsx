@@ -29,7 +29,7 @@ export default class CoverBuilder extends Cover {
       this._section.background = {
         type: 'image',
         image: {
-          url: this._getCoverPlaceholderImage(),
+          url: app.pathCascade + this._getCoverPlaceholderImage(),
           isPlaceholder: true
         }
       };

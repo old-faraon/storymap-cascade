@@ -3,10 +3,16 @@ window.i18n = null;
 define.amd.jQuery = true;
 
 if (!app.isProduction) {
-  require(['Handlebars'], function() {
+  require(['Handlebars'], function(Handlebars) {
     //
   });
 }
+
+require(['Handlebars'], function(Handlebars) {
+  Handlebars.registerHelper('pathCascade', function () {
+    return app.pathCascade
+  });
+});
 
 require([
   // Also include it here so it get loaded before MainView to avoid conflict with Bootstrap

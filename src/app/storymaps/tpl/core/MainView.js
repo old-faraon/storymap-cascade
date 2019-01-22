@@ -153,7 +153,7 @@ define([
           june2018ReleaseDate: app.cfg.JUNE_CREATED_DATE,
           isBuilder: app.isInBuilder,
           isEsriLogo: hasEsriLogo,
-          logoPath: 'resources/tpl/viewer/icons/esri-logo-black.png',
+          logoPath: app.pathCascade + 'resources/tpl/viewer/icons/esri-logo-black.png',
           logoElements: [$('.story-header .logoImg')],
           taglineElements: [$('.story-header .linkContainer .link')],
           shareElements: [$('.story-header .share-btn-container')],

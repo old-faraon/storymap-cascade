@@ -111,7 +111,7 @@ export default function(params = {}) {
   // Buttons in new block menu
   const addButtons = {
     text: {
-      icon: 'resources/tpl/builder/icons/text-editor/Text.png',
+      icon: app.pathCascade + 'resources/tpl/builder/icons/text-editor/Text.png',
       label: i18n.builder.textEditor.blockAdd.text,
       action: function() {
         var resultDeferred = new Deferred();
@@ -124,7 +124,7 @@ export default function(params = {}) {
       }
     },
     media: {
-      icon: 'resources/tpl/builder/icons/text-editor/Media.png',
+      icon: app.pathCascade + 'resources/tpl/builder/icons/text-editor/Media.png',
       label: i18n.builder.textEditor.blockAdd.media,
       action: function(params) {
         function onMediaSelected(resultDeferred, selection) {
@@ -167,7 +167,7 @@ export default function(params = {}) {
       }
     },
     title: {
-      icon: 'resources/tpl/builder/icons/text-editor/Title.png',
+      icon: app.pathCascade + 'resources/tpl/builder/icons/text-editor/Title.png',
       label: i18n.builder.textEditor.blockAdd.title,
       action: function(params = {}) {
         var resultDeferred = new Deferred();
@@ -189,8 +189,8 @@ export default function(params = {}) {
       }
     },
     immersive: {
-      icon: 'resources/tpl/builder/icons/text-editor/Immersive.png',
-      //iconHover: 'resources/tpl/builder/icons/text-editor/Immersive-hover.gif',
+      icon: app.pathCascade + 'resources/tpl/builder/icons/text-editor/Immersive.png',
+      //iconHover: app.pathCascade + 'resources/tpl/builder/icons/text-editor/Immersive-hover.gif',
       label: i18n.builder.textEditor.blockAdd.immersive,
       action: function(params = {}) {
         var resultDeferred = new Deferred();

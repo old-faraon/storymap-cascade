@@ -13,8 +13,8 @@ import UIUtils from 'storymaps/tpl/utils/UI';
 
 import IdentityManager from 'esri/IdentityManager';
 
-const PREVIEW_THUMB = 'resources/tpl/builder/icons/media-placeholder/scene.png';
-const PREVIEW_ICON = 'resources/tpl/builder/icons/immersive-panel/scene.png';
+const PREVIEW_THUMB = app.pathCascade + 'resources/tpl/builder/icons/media-placeholder/scene.png';
+const PREVIEW_ICON = app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/scene.png';
 
 var NEED_PORTAL_INIT = true;
 

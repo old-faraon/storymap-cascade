@@ -73,7 +73,7 @@ export default class Controller {
     const DEFAULT_HEADER_SETTINGS = {
       logo: {
         enabled: true,
-        url: 'resources/tpl/viewer/icons/esri-logo.png',
+        url: app.pathCascade + 'resources/tpl/viewer/icons/esri-logo.png',
         link: 'https://www.esri.com'
       },
       link: {

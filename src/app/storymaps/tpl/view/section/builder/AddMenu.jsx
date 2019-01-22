@@ -5,17 +5,17 @@ import i18n from 'lib-build/i18n!resources/tpl/builder/nls/app';
 const BUTTONS = {
   sequence: {
     name: 'sequence',
-    icon: 'resources/tpl/builder/icons/text-editor/Narrative.png',
+    icon: app.pathCascade + 'resources/tpl/builder/icons/text-editor/Narrative.png',
     label: i18n.builder.sections.sequence
   },
   title: {
     name: 'title',
-    icon: 'resources/tpl/builder/icons/text-editor/Title.png',
+    icon: app.pathCascade + 'resources/tpl/builder/icons/text-editor/Title.png',
     label: i18n.builder.sections.title
   },
   immersive: {
     name: 'immersive',
-    icon: 'resources/tpl/builder/icons/text-editor/Immersive.png',
+    icon: app.pathCascade + 'resources/tpl/builder/icons/text-editor/Immersive.png',
     //iconHover: 'resources/tpl/builder/icons/text-editor/Immersive-hover.gif',
     label: i18n.builder.sections.immersive
   }

@@ -22,8 +22,8 @@ import Deferred from 'dojo/Deferred';
 
 import UIUtils from 'storymaps/tpl/utils/UI';
 
-const PREVIEW_THUMB = 'resources/tpl/builder/icons/media-placeholder/map.png';
-const PREVIEW_ICON = 'resources/tpl/builder/icons/immersive-panel/map.png';
+const PREVIEW_THUMB = app.pathCascade + 'resources/tpl/builder/icons/media-placeholder/map.png';
+const PREVIEW_ICON = app.pathCascade + 'resources/tpl/builder/icons/immersive-panel/map.png';
 
 export default class WebMap extends Media {
 
