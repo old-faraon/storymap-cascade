@@ -63,9 +63,11 @@
   }
 
   function defineDojoConfig() {
-    var path1 = location.pathname.replace(/\/[^/]+$/, '/');
-    var path2 = location.pathname.replace(/\/[^/]+$/, '');
-    var path3 = location.pathname.replace(/\/src\/[^/]*$/, '/');
+    let url = app.pathCascade
+
+    var path1 = url.replace(/\/[^/]+$/, '/');
+    var path2 = url.replace(/\/[^/]+$/, '');
+    var path3 = url.replace(/\/src\/[^/]*$/, '/');
     var jsapi4Directory = getJSAPIVersionDirectory(app.pathJSAPI4);
 
     window.dojoConfig = {
@@ -177,13 +179,13 @@
 
   if (app.isProduction) {
     if (app.isInBuilder) {
-      loadCSS('app/builder-min.css');
+      loadCSS(app.pathCascade + 'app/builder-min.css');
     }
     else if (app.isPrint) {
-      loadCSS('app/print-min.css');
+      loadCSS(app.pathCascade + 'app/print-min.css');
     }
     else {
-      loadCSS('app/viewer-min.css');
+      loadCSS( app.pathCascade + 'app/viewer-min.css');
     }
   }
 
@@ -208,19 +210,19 @@
   }
 
   loadJS(app.pathJSAPI3 + 'init.js', true);
-  loadJS('app/config.js');
+  loadJS(app.pathCascade + 'app/config.js');
 
   if (app.isProduction) {
     _ = {}; // eslint-disable-line no-undef
 
     if (app.isInBuilder) {
-      loadJS('app/builder-min.js');
+      loadJS(app.pathCascade + 'app/builder-min.js');
     }
     else if (app.isPrint) {
-      loadJS('app/print-min.js');
+      loadJS(app.pathCascade + 'app/print-min.js');
     }
     else {
-      loadJS('app/viewer-min.js');
+      loadJS(app.pathCascade + 'app/viewer-min.js');
     }
   }
 
@@ -232,7 +234,7 @@
     });
   }
   else {
-    loadJS('app/main-app.js');
+    loadJS(app.pathCascade + 'app/main-app.js');
   }
 
   // Enable Google Analytics on storymaps.esri.com
@@ -253,7 +255,7 @@
     })();
   }
 
-  loadJS('app/custom-scripts.js');
+  loadJS(app.pathCascade + 'app/custom-scripts.js');
 
   if (! app.isProduction) {
     loadJS('//localhost:35729/livereload.js');

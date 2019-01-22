@@ -12,7 +12,7 @@ require([
   // Also include it here so it get loaded before MainView to avoid conflict with Bootstrap
   'lib/jquery/dist/jquery.min',
   'storymaps/tpl/core/Core',
-  'dojo/i18n!./resources/tpl/viewer/nls/app.js?v=' + app.version,
+  'dojo/i18n!' + app.pathCascade + 'resources/tpl/viewer/nls/app.js?v=' + app.version,
   'esri/urlUtils',
   'dojo/ready'
 ], function(
@@ -66,7 +66,7 @@ require([
     if (app.isInBuilder) {
       // TODO: check if that step is still required
       require([
-        'dojo/i18n!./resources/tpl/builder/nls/app.js?v=' + app.version,
+        'dojo/i18n!' + app.pathCascade + 'resources/tpl/builder/nls/app.js?v=' + app.version,
         'dojo/_base/lang'
       ], function(i18nBuilder, lang) {
 
